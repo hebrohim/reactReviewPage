@@ -1,0 +1,38 @@
+
+:root {
+  --white:#f9f9f9;
+  --primary-50: #eeedfbda;
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+
+}
+
+body {
+  margin: 0;
+padding: 0;
+font-family: 'Roboto Mono', monospace;
+background-color: var(--primary-50)
+}
+
+#reviewText{
+  margin-bottom:0;
+  color: var(--primary-900);
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+#underline{
+  margin: 0 auto;
+  width: 100px;
+  height: 5px;
+  background-color: var(--primary-500);
+}
