@@ -12,19 +12,25 @@
   --primary-800: #282566;
   --primary-900: #141233;
 
-
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+  --borderRadius: .30rem;
 }
 
 body {
   margin: 0;
 padding: 0;
 font-family: 'Roboto Mono', monospace;
-background-color: var(--primary-50)
+background-color: var(--primary-50);
+color: var(--primary-900);
 }
-
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #reviewText{
   margin-bottom:0;
-  color: var(--primary-900);
   text-align: center;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -35,4 +41,60 @@ background-color: var(--primary-50)
   width: 100px;
   height: 5px;
   background-color: var(--primary-500);
+}
+
+.reviewContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  margin-top:50px ;
+  background-color: var(--white);
+  color:#141233a1;
+  padding: 1.5rem 2rem;
+box-shadow: var(--shadow-1);
+border-radius: var(--borderRadius);
+}
+
+#image{
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 10px -5px 1px 0px var(--primary-500);
+}
+
+#author{
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+}
+#jobTitle{
+  margin-top: 0;
+color:#645cff;
+text-transform:upperCase;
+font-size:.8rem;
+font-weight: 600;
+}
+
+#info{
+  font-size: .9rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+#nextBtn,#previousBtn{
+  font-size: 2.5rem;
+  font-weight:300;
+  color:var(--primary-700);
+}
+
+#randomBtn{
+  
+  background-color: var(--primary-200);
+  color: var(--primary-500);
+  border: none;
+  padding:5px 15px;
+  border-radius: var(--borderRadius);
 }
