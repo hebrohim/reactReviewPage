@@ -13,6 +13,8 @@ const next = () =>{
 }
 }
 
+
+
 const previous = () =>{
   setindex(index - 1)
   if ( index <= 0) {
@@ -20,6 +22,12 @@ const previous = () =>{
     }
 }
 
+
+const randomReview = () =>{
+  let randomNumber = Math.floor(Math.random() * Reviews.length)
+  console.log(randomNumber)
+  setindex(randomNumber)
+}
 
   return (
     <div className='reviewContainer'>
@@ -34,7 +42,7 @@ const previous = () =>{
         <button id='nextBtn' onClick={next}><BiChevronRight/></button>
         </div>
 
-        <button id = "randomBtn">Random</button>
+        <button id = "randomBtn" onClick={randomReview}>Random</button>
     </div>
   )
 }
